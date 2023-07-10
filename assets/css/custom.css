@@ -1,0 +1,32 @@
+/*
+ * Custom code goes here.
+ * A template should always ship with an empty custom.css
+ */
+
+
+/*-----------------------font-----------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    --main-text: 'Open Sans', sans-serif;
+    --decotation-text: 'Mulish', sans-serif;
+    --footer-text: #fff;
+    --text: #000;
+    --buttons: #383838;
+    --footer-background: #131313;
+    --border: #e9e3e3;
+    --header-strip: #EAEAEA;
+}
+
+body {
+    font-family: var(--main-text);
+}
+
+
+
+/*-------------------------------home-page---------------------------------*/
+.rabat-newsletter {
+    background-color: var(--header-strip);
+    text-align: center;
+    font-size: 0.875rem;
+}
