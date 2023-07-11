@@ -218,6 +218,36 @@ a.main-button-slider:hover {
     border-radius: 5px;
 }
 
-.block_newsletter form .row .col-xs-12:first-of-type .btn-primary:first-of-type {
+/* .block_newsletter form .row .col-xs-12:first-of-type .btn-primary:first-of-type {
     margin-left: 0;
+} */
+
+.block_newsletter form .input-wrapper {
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+/* .block_newsletter form {
+    position: relative;
+} */
+
+.block_newsletter .subscribe {
+    position: absolute;
+    top: 0;
+    right: 14px;
+}
+
+.zegarek_text {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer .block_newsletter #block-newsletter-label,
+.customization-modal .modal-content .modal-body {
+    color: var(--footer-text);
+}
+
+#block-newsletter-label {
+    margin-top: 10px;
+    margin-bottom: 0;
 }
