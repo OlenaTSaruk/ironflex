@@ -38,7 +38,7 @@
               <img src="{$slide.image_url}" alt="{$slide.legend|escape}" loading="lazy" width="1110" height="340">
               {if $slide.title || $slide.description}
                 <figcaption class="caption">
-                  <h2 class="display-1 text-uppercase">{$slide.title}</h2>
+                  <h2 class="display-1 {*text-uppercase*}">{$slide.title}</h2>
                   <div class="caption-description">{$slide.description nofilter}</div>
                 </figcaption>
               {/if}

@@ -24,7 +24,9 @@
  *}
 {block name='header_banner'}
   <div class="header-banner">
-    {hook h='displayBanner'}
+    <div class="flexcontainer">
+      {hook h='displayBanner'}
+    </div>
   </div>
 {/block}
 
@@ -37,7 +39,7 @@
             {hook h='displayNav1'}
           </div>
           <div class="col-md-7 right-nav">
-              {hook h='displayNav2'}
+            {hook h='displayNav2'}
           </div>
         </div>
         <div class="hidden-md-up text-sm-center mobile">
