@@ -264,13 +264,31 @@ a.main-button-slider:hover {
     color: var(--footer-text);
 }
 
+/*------------------------------footer ikons----------------------------*/
+.zakupy {
+    margin-bottom: 16px;
+    color: var(--footer-text);
+}
+
+.zakupy_ikons {
+    display: flex;
+}
+
+.zakupy_ikons img {
+    margin-right: 10px;
+}
+
+.zakupy_ikons p {
+    color: var(--footer-text);
+}
+
 /*----------------------------footer after------------------------------*/
 #footer .row:nth-child(2) {
     display: flex;
 }
 
 #footer .row:nth-child(2) {
-    margin-top: 1.25rem;
+    margin-top: 2rem;
 }
 
 #footer .contact {
