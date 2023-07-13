@@ -26,7 +26,7 @@
 <div class="js-product product{if !empty($productClasses)} {$productClasses}{/if}">
   <article class="product-miniature js-product-miniature" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}">
     <div class="thumbnail-container">
-      <div class="thumbnail-top">
+      <div class="thumbnail-top"> {debug}
         {block name='product_thumbnail'}
           {if $product.cover}
             <a href="{$product.url}" class="thumbnail product-thumbnail">
@@ -118,6 +118,22 @@
         {block name='product_reviews'}
           {hook h='displayProductListReviews' product=$product}
         {/block}
+      </div>
+
+      <div class="to-cart">
+        <div class="add">
+          <button
+            class="btn btn-primary add-to-cart"
+            data-button-action="add-to-cart"
+            type="submit"
+            {if !$product.add_to_cart_url}
+              disabled
+            {/if}
+          >
+{*            <i class="material-icons shopping-cart">&#xE547;</i>      *}
+            {l s='Add to cart' d='Shop.Theme.Actions'}
+          </button>
+        </div>
       </div>
 
       {include file='catalog/_partials/product-flags.tpl'}
