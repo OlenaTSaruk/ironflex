@@ -38,7 +38,11 @@
       {/block}
     </div>
 
-    <div class="row">
+    <div class="row">          
+      {block name="hotdeal"}
+        {hook h = 'hotdeal'}
+      {/block}
+
       {block name='hook_footer_after'}
         {hook h='displayFooterAfter'}
       {/block}
@@ -47,7 +51,7 @@
 
   <hr/>
 
-  <div class="row">
+    <div class="row">
     <div class="container">
       <div class="copyright-border col-md-12">
         <p class="text-sm-left">
