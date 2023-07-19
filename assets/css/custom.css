@@ -14,11 +14,13 @@
     --text: #000;
     --buttons: #383838;
     --footer-background: #131313;
-    --border: #e9e3e3;
+    --border-color: #e9e3e3;
     --header-strip: #EAEAEA;
     --link: #E58861;
     --buttons-mini: #fff;
     --stars: sepia(100%) hue-rotate(5deg) saturate(6);
+    --border-style: 1px solid var(--border-color);
+    --border-radius: 6px;
 }
 
 body {
@@ -46,6 +48,10 @@ section#wrapper {
 
 /*-------------------------------home-page---------------------------------*/
 /*----------------header---------------*/
+#main h2 {
+    font-size: 1.5rem;
+}
+
 #subcategory-block-1 {
     background-color: var(--header-strip);
 }
@@ -357,7 +363,69 @@ a.main-button-slider {
     }
 }
 
-/*----------------------poducts main-page----------------------*/
+/*----------------------products main-page----------------------*/
+.ph_pcms_desktop_3.layout-grid ul li {
+    width: 0;
+}
+
+#ets_hotdeals .product-infomation-content .product-description,
+#ets_hotdeals .product-infomation-content {
+    box-shadow: none;
+}
+
+#ets_hotdeals .ets-product-specific .product-description {
+    padding: 0;
+    height: 100%;
+}
+
+.ybc_countdown {
+    margin-top: 12px;
+    border: var(--border-style);
+    border-radius: var(--border-radius);
+}
+
+#ets_hotdeals {
+    margin: 0;
+}
+
+#ets_hotdeals .product-miniature .thumbnail-container {
+    margin: 0;
+    display: flex;
+}
+
+#ets_hotdeals h3.h1 {
+    margin-top: .875rem;
+    text-transform: none;
+    text-align: center;
+}
+
+#ets_hotdeals .ets_hotdeal_grid_items .product-miniature.js-product-miniature {
+    margin: 0 1.25rem;
+}
+
+#ets_hotdeals .product-miniature .product-price-and-shipping {
+    margin: 0;
+}
+
+#ets_hotdeals article {
+    width: 100%;
+}
+
+#ets_hotdeals .product-miniature .product-title,
+#ets_hotdeals .ets-product-specific .product-description .short_description p {
+    margin-top: 0;
+    text-align: left;
+}
+
+#ets_hotdeals .product-miniature .thumbnail-container .product-thumbnail {
+    width: 300px;
+}
+
+#ets_hotdeals .thumbnail.product-thumbnail>img {
+    margin: 0;
+    margin-left: -40px;
+}
+
 #index .js-product.product {
     border: 1px solid #D9D9D9;
     width: 20%;

@@ -120,6 +120,37 @@
         {/block}
       </div>
 
+      {*<div class="product-actions js-product-actions">
+        {block name='product_buy'}
+          <form action="{$urls.pages.cart}" method="post" id="add-to-cart-or-refresh">
+            <input type="hidden" name="token" value="{$static_token}">
+            <input type="hidden" name="id_product" value="{$product.id}" id="product_page_product_id">
+            <input type="hidden" name="id_customization" value="{$product.id_customization}" id="product_customization_id" class="js-product-customization-id">
+
+            {block name='product_variants'}
+              {include file='catalog/_partials/product-variants.tpl'}
+            {/block}
+
+            {block name='product_pack'}
+              {if $packItems}
+                <section class="product-pack">
+                  <p class="h4">{l s='This pack contains' d='Shop.Theme.Catalog'}</p>
+                  {foreach from=$packItems item="product_pack"}
+                    {block name='product_miniature'}
+                      {include file='catalog/_partials/miniatures/pack-product.tpl' product=$product_pack showPackProductsPrice=$product.show_price}
+                    {/block}
+                  {/foreach}
+              </section>
+              {/if}
+            {/block}
+
+            {block name='product_add_to_cart'}
+              {include file='catalog/_partials/product-add-to-cart-list.tpl'}
+            {/block}
+          </form>
+        {/block}
+      </div>*}
+
       <div class="to-cart">
         <div class="add">
           <button
