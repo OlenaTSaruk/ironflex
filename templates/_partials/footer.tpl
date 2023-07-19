@@ -39,9 +39,9 @@
     </div>
 
     <div class="row">          
-      {block name="hotdeal"}
-        {hook h = 'hotdeal'}
-      {/block}
+      {*block name="hotdeal"
+        {hook h='displayCustomDiscount'}
+      /block*}
 
       {block name='hook_footer_after'}
         {hook h='displayFooterAfter'}
