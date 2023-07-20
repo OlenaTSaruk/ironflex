@@ -368,6 +368,7 @@ a.main-button-slider {
     width: 0;
 }
 
+/*--- sale ---*/
 #ets_hotdeals .product-infomation-content .product-description,
 #ets_hotdeals .product-infomation-content {
     box-shadow: none;
@@ -513,7 +514,23 @@ h3.h3.product-title {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
 }
 
-.add .btn.btn-primary.add-to-cart {
+.product-actions .control-label {
+    display: none;
+}
+
+.product-discounts {
+    margin-bottom: 0;
+}
+
+.product-quantity .add {
+    margin-bottom: 0;
+}
+
+.product-quantity {
+    justify-content: center;
+}
+
+.to-cart .add .btn.btn-primary.add-to-cart {
     background: var(--buttons-mini);
     color: var(--text);
     text-transform: none;
@@ -557,6 +574,10 @@ element.style {
 .product-list-reviews {
     position: static;
     justify-content: flex-start;
+}
+
+#main .qty {
+    display: none;
 }
 
 @media (max-width: 991px) {
