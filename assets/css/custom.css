@@ -22,6 +22,7 @@
     --border-style: 1px solid var(--border-color);
     --border-radius: 6px;
     --box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
+    --sale-price: #FF4D00;
 }
 
 body {
@@ -475,6 +476,27 @@ a.main-button-slider {
 /* .time-count #ets_clock_1 span.ybc_cd_item span.numder {
     text-transform: uppercase;
 } */
+.product-title-attribute {
+    display: none;
+}
+
+#ets_hotdeals h3.h1.products-section-title {
+    font-weight: 600;
+}
+
+#ets_hotdeals h3.h3.product-title a {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+#ets_hotdeals h3.h3.product-title {
+    margin-bottom: 20px;
+}
+
+#ets_hotdeals .price {
+    font-size: 1.5rem;
+    color: var(--sale-price);
+}
 
 .time-count #ets_clock_1 span.ybc_cd_item::after {
     content: ":";
