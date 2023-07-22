@@ -251,7 +251,7 @@ main #wrapper {
     position: absolute;
     top: 20%;
     left: 50%;
-    transform: translate(-50%, -10%);
+    transform: translate(-45%, -10%);
     display: flex;
     flex-wrap: wrap;
     width: 60rem;
@@ -309,6 +309,17 @@ a.main-button-slider {
 
 #carousel figure figcaption img {
     height: auto;
+}
+
+@media (min-width: 1921px) {
+    #carousel figure img.carousel-img {
+        height: auto;
+        width: 100vw;
+    }
+
+    #slider-text-photo {
+        transform: translate(-45%, 0%);
+    }
 }
 
 @media (max-width: 992px) {
@@ -496,6 +507,10 @@ a.main-button-slider {
 #ets_hotdeals .price {
     font-size: 1.5rem;
     color: var(--sale-price);
+}
+
+.ybc_cd_item .number {
+    text-transform: uppercase;
 }
 
 .time-count #ets_clock_1 span.ybc_cd_item::after {
