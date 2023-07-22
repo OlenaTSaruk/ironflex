@@ -6,6 +6,42 @@
         <source>Seasonal sale</source>
         <target state="translated">Wiosenna wyprzedaż</target>
       </trans-unit>
+      <trans-unit id="70e0bfbe09e4e4b3721cd989b4858402">
+        <source>Offer ends in:</source>
+        <target state="translated">Oferta kończy się za:</target>
+      </trans-unit>
+      <trans-unit id="44fdec47036f482b68b748f9d786801b">
+        <source>days</source>
+        <target state="translated">dni</target>
+      </trans-unit>
+      <trans-unit id="628b7db04235f228d40adc671413a8c8">
+        <source>day</source>
+        <target state="translated">dzeiń</target>
+      </trans-unit>
+      <trans-unit id="c760237f74bcc7e3f90ad956086edb66">
+        <source>hrs</source>
+        <target state="translated">godzin</target>
+      </trans-unit>
+      <trans-unit id="896c55cc5e46fab38ce9f51ebf7bfcd3">
+        <source>hour</source>
+        <target state="translated">godzina</target>
+      </trans-unit>
+      <trans-unit id="1442a7b6e2c20b27775175eecba84dac">
+        <source>mins</source>
+        <target state="translated">minut</target>
+      </trans-unit>
+      <trans-unit id="d8bd79cc131920d5de426f914d17405a">
+        <source>min</source>
+        <target state="translated">minuta</target>
+      </trans-unit>
+      <trans-unit id="975a85a4ffa56e23c70e2bbeaf405ac">
+        <source>secs</source>
+        <target state="translated">secund</target>
+      </trans-unit>
+      <trans-unit id="74459ca3cf85a81df90da95ff6e7a207">
+        <source>sec</source>
+        <target state="translated">secunda</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
