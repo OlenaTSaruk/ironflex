@@ -52,6 +52,7 @@ section#wrapper {
 /*----------------header---------------*/
 #main h2 {
     font-size: 1.5rem;
+    margin-top: 16px;
 }
 
 #subcategory-block-1 {
@@ -381,7 +382,20 @@ a.main-button-slider {
     width: 0;
 }
 
+.ph_pcms_block_product_list {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 /*--- sale ---*/
+.content-anywhere-displayhomehotdeals h2 {
+    padding-left: 15px;
+}
+
+.content-anywhere-displayhomehotdeals .col-12.col-lg-7 {
+    padding-left: 0;
+}
+
 #ets_hotdeals .product-infomation-content .product-description,
 #ets_hotdeals .product-infomation-content {
     box-shadow: none;
@@ -393,7 +407,7 @@ a.main-button-slider {
 }
 
 .ybc_countdown {
-    margin-top: 12px;
+    margin-top: 16px;
     border: var(--border-style);
     border-radius: var(--border-radius);
 }
@@ -414,7 +428,7 @@ a.main-button-slider {
 }
 
 #ets_hotdeals .product-img-content {
-    padding-bottom: 18px;
+    padding-bottom: 16px;
     border-bottom: var(--border-style);
 }
 
@@ -432,7 +446,7 @@ a.main-button-slider {
     margin: 0;
 }
 
-.product-miniature .regular-price {
+#ets_hotdeals .product-miniature .regular-price {
     padding-left: 8px;
     font-size: 1.25rem;
     color: #ababab;
@@ -552,12 +566,54 @@ a.main-button-slider {
     text-transform: uppercase;
 }
 
+@media (max-width: 1199px) and (min-width: 768px) {
+
+    .ph_pcms_tablet_3>div[itemprop="itemListElement"],
+    .ph_pcms_tablet_3>div.product,
+    .ph_pcms_tablet_3>.product-miniature {
+        width: 32% !important;
+    }
+
+    .sale.home-category .product-miniature .product-description {
+        padding-bottom: 1.175rem;
+    }
+}
+
+@media (max-width: 1199px) {
+    #ets_hotdeals .product-img-content {
+        padding-bottom: 0;
+    }
+
+    #ets_hotdeals .products-section-title {
+        margin-bottom: 0.85rem;
+    }
+}
 
 @media (min-width: 992px) {
     #index .content-anywhere-displayhome .col-lg-6 {
         width: 100%;
     }
+
+
 }
+
+@media (max-width: 992px) {
+    .content-anywhere-displayhomehotdeals .col-12.col-lg-7 {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .featured-products .products {
+        flex-wrap: nowrap;
+    }
+
+    #index .sale .js-product.product {
+        width: 32% !important;
+    }
+}
+
+@media (max-width: 460px) {}
 
 .index.roduct_list.grid.products.ph_pcms_product_list_wrapper.layout-grid.ph_pcms_desktop_3.ph_pcms_tablet_3.ph_pcms_mobile_1 {
     margin: 0 5px;
@@ -590,15 +646,46 @@ a.main-button-slider {
 
 #index .obnizka .obnizka_img {
     margin-right: 10px;
-    height: 377px;
+    height: 373px;
 }
+
+@media (max-width: 1199px) {
+    #index .obnizka .obnizka_img {
+        height: 382px;
+    }
+}
+
+@media (max-width: 991px) {
+    #index .obnizka .obnizka_img {
+        height: 314px;
+    }
+}
+
+@media (max-width: 767px) {
+    #index .obnizka .obnizka_img {
+        height: auto;
+        width: 180px;
+    }
+
+    #index .obnizka.home-category .js-product.product:nth-child(3) {
+        display: none;
+    }
+
+    .ph_pcms_mobile_1>div[itemprop="itemListElement"],
+    .ph_pcms_mobile_1>div.product,
+    .ph_pcms_mobile_1>.product-miniature {
+        width: 49% !important;
+    }
+}
+
+@media (max-width: 460px) {}
 
 #index .obnizka .js-product.product {
     width: 24%;
 }
 
 #index .home-category {
-    margin: 12px 0;
+    margin-top: 12px;
 }
 
 #index .home-category.five .js-product.product {
@@ -606,13 +693,22 @@ a.main-button-slider {
 }
 
 #index .baner {
+    margin-top: 24px;
     display: flex;
     justify-content: space-between;
 }
 
-/* #index .baner img {
-width: 49%;
-} */
+@media (min-width: 1200px) {}
+
+#index .baner_first.col-xs-12.col-lg-6 {
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+#index .baner_second.col-xs-12.col-lg-6 {
+    padding-left: 10px;
+    padding-right: 0;
+}
 
 /*--------------------miniature product-----------------*/
 h3.h3.product-title a {
@@ -654,8 +750,13 @@ h3.h3.product-title {
     width: 100%;
 }
 
+.to-cart {
+    width: 100%;
+}
+
 .add {
     text-align: center;
+    width: 100%;
 }
 
 .js-product.product .product-miniature .thumbnail-container {
