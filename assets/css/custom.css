@@ -432,6 +432,12 @@ a.main-button-slider {
     margin: 0;
 }
 
+.product-miniature .regular-price {
+    padding-left: 8px;
+    font-size: 1.25rem;
+    color: #ababab;
+}
+
 #ets_hotdeals article {
     width: 100%;
 }
@@ -484,6 +490,39 @@ a.main-button-slider {
     color: #C2C2C2;
 }
 
+.ets_clock.active {
+    max-width: 188px;
+    justify-content: space-between;
+}
+
+.separator {
+    padding-top: 10px;
+}
+
+.ybc_cd_item_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ybc_cd_item {
+    width: 44px;
+    color: #645E5E;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 10px;
+    border: var(--border-style);
+    border-radius: var(--border-radius);
+}
+
+.ybc_cd_item_text {
+    padding-top: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--buttons);
+}
+
 /* .time-count #ets_clock_1 span.ybc_cd_item span.numder {
     text-transform: uppercase;
 } */
@@ -513,9 +552,6 @@ a.main-button-slider {
     text-transform: uppercase;
 }
 
-.time-count #ets_clock_1 span.ybc_cd_item::after {
-    content: ":";
-}
 
 @media (min-width: 992px) {
     #index .content-anywhere-displayhome .col-lg-6 {
