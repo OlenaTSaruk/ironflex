@@ -21,6 +21,8 @@
     --stars: sepia(100%) hue-rotate(5deg) saturate(6);
     --border-style: 1px solid var(--border-color);
     --border-radius: 6px;
+    --box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
+    --sale-price: #FF4D00;
 }
 
 body {
@@ -249,7 +251,7 @@ main #wrapper {
     position: absolute;
     top: 20%;
     left: 50%;
-    transform: translate(-50%, -10%);
+    transform: translate(-45%, -10%);
     display: flex;
     flex-wrap: wrap;
     width: 60rem;
@@ -307,6 +309,17 @@ a.main-button-slider {
 
 #carousel figure figcaption img {
     height: auto;
+}
+
+@media (min-width: 1921px) {
+    #carousel figure img.carousel-img {
+        height: auto;
+        width: 100vw;
+    }
+
+    #slider-text-photo {
+        transform: translate(-45%, 0%);
+    }
 }
 
 @media (max-width: 992px) {
@@ -368,6 +381,7 @@ a.main-button-slider {
     width: 0;
 }
 
+/*--- sale ---*/
 #ets_hotdeals .product-infomation-content .product-description,
 #ets_hotdeals .product-infomation-content {
     box-shadow: none;
@@ -390,7 +404,18 @@ a.main-button-slider {
 
 #ets_hotdeals .product-miniature .thumbnail-container {
     margin: 0;
+    background-repeat: var(--border-radius);
+    border-radius: var(--border-radius);
+}
+
+.product-img-content {
     display: flex;
+    box-shadow: var(--box-shadow);
+}
+
+#ets_hotdeals .product-img-content {
+    padding-bottom: 18px;
+    border-bottom: var(--border-style);
 }
 
 #ets_hotdeals h3.h1 {
@@ -411,6 +436,10 @@ a.main-button-slider {
     width: 100%;
 }
 
+.ets_hotdeal_grid_items .product-miniature.js-product-miniature {
+    margin: 0;
+}
+
 #ets_hotdeals .product-miniature .product-title,
 #ets_hotdeals .ets-product-specific .product-description .short_description p {
     margin-top: 0;
@@ -427,13 +456,65 @@ a.main-button-slider {
 }
 
 #index .js-product.product {
-    border: 1px solid #D9D9D9;
+    border: var(--border-style);
     width: 20%;
     border-radius: 6px;
 }
 
 #index .js-product.product .thumbnail-container.reviews-loaded {
     border-radius: 6px;
+}
+
+#ets_hotdeals #add-to-cart-or-refresh {
+    padding: 4px 0;
+}
+
+#ets_hotdeals .short_description {
+    display: none;
+}
+
+#ets_hotdeals .product-description {
+    border-bottom: none;
+}
+
+.time-count h3 {
+    font-weight: 400;
+    font-size: 0.75rem;
+    text-align: left;
+    color: #C2C2C2;
+}
+
+/* .time-count #ets_clock_1 span.ybc_cd_item span.numder {
+    text-transform: uppercase;
+} */
+.product-title-attribute {
+    display: none;
+}
+
+#ets_hotdeals h3.h1.products-section-title {
+    font-weight: 600;
+}
+
+#ets_hotdeals h3.h3.product-title a {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+#ets_hotdeals h3.h3.product-title {
+    margin-bottom: 20px;
+}
+
+#ets_hotdeals .price {
+    font-size: 1.5rem;
+    color: var(--sale-price);
+}
+
+.ybc_cd_item .number {
+    text-transform: uppercase;
+}
+
+.time-count #ets_clock_1 span.ybc_cd_item::after {
+    content: ":";
 }
 
 @media (min-width: 992px) {
@@ -461,7 +542,6 @@ a.main-button-slider {
 #index .sale,
 #index .obnizka {
     display: flex;
-
 }
 
 #index .sale .sale_img {
@@ -473,7 +553,7 @@ a.main-button-slider {
 }
 
 #index .obnizka .obnizka_img {
-    margin-right: 5px;
+    margin-right: 10px;
     height: 377px;
 }
 
@@ -508,12 +588,29 @@ h3.h3.product-title {
     height: 40px;
 }
 
-.product-description {
-    border-bottom: 1px solid var(--border);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
+.thumbnail-container.reviews-loaded .product-description {
+    border-bottom: var(--border-style);
+    box-shadow: var(--box-shadow);
 }
 
-.add .btn.btn-primary.add-to-cart {
+.product-actions .control-label,
+.control-label {
+    display: none;
+}
+
+.product-discounts {
+    margin-bottom: 0;
+}
+
+.product-quantity .add {
+    margin-bottom: 0;
+}
+
+.product-quantity {
+    justify-content: center;
+}
+
+.to-cart .add .btn.btn-primary.add-to-cart {
     background: var(--buttons-mini);
     color: var(--text);
     text-transform: none;
@@ -557,6 +654,16 @@ element.style {
 .product-list-reviews {
     position: static;
     justify-content: flex-start;
+}
+
+#main .qty {
+    display: none;
+}
+
+@media (max-width: 1199px) {
+    #index .obnizka.home-category .js-product.product:nth-child(4) {
+        display: none;
+    }
 }
 
 @media (max-width: 991px) {

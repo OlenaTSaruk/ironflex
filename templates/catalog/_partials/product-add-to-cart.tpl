@@ -46,7 +46,7 @@
             aria-label="{l s='Quantity' d='Shop.Theme.Actions'}"
           >
         </div>
-
+      <div class="to-cart">
         <div class="add">
           <button
             class="btn btn-primary add-to-cart"
@@ -56,10 +56,11 @@
               disabled
             {/if}
           >
-            <i class="material-icons shopping-cart">&#xE547;</i>
+{*            <i class="material-icons shopping-cart">&#xE547;</i>      *}
             {l s='Add to cart' d='Shop.Theme.Actions'}
           </button>
         </div>
+      </div>
 
         {hook h='displayProductActions' product=$product}
       </div>
@@ -80,7 +81,7 @@
       </span>
     {/block}
 
-    {block name='product_minimal_quantity'}
+{*    {block name='product_minimal_quantity'}
       <p class="product-minimal-quantity js-product-minimal-quantity">
         {if $product.minimal_quantity > 1}
           {l
@@ -90,6 +91,6 @@
           }
         {/if}
       </p>
-    {/block}
+    {/block}      *}
   {/if}
 </div>
