@@ -39,6 +39,9 @@
             {hook h='displayNav1'}
           </div>
           <div class="col-md-7 right-nav">
+              
+              
+              
               {hook h='displayNav2'}
           </div>
         </div>
@@ -73,6 +76,7 @@
         </div>
         <div class="header-top-right col-md-10 col-sm-12 position-static">
           {hook h='displayTop'}
+          
         </div>
       </div>
       <div id="mobile_top_menu_wrapper" class="row hidden-md-up" style="display:none;">
