@@ -1156,6 +1156,15 @@ h1.h1 {
     position: static;
 }
 
+.one-product .additional-links,
+.one-product .comments-note span {
+    display: none;
+}
+
+.one-product .star-content {
+    margin: 0;
+}
+
 .current-price-value {
     font-size: 2rem;
     font-weight: 700;

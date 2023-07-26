@@ -76,13 +76,8 @@
           {/block}
 
           {include file='catalog/_partials/product-flags.tpl'}
-{*
-{hook h='displayProductActions'}
-*}
-          
-          {block name='product_prices'}
-            {include file='catalog/_partials/product-prices.tpl'}
-          {/block}
+
+          {hook h='displayProductActions' product=$product}
 
           <div class="product-information">
             {block name='product_description_short'}
@@ -95,6 +90,8 @@
               {/block}
             {/if}
 
+            
+
             <div id="product-page-cart" class="product-actions js-product-actions">
               {block name='product_buy'}
                 <form action="{$urls.pages.cart}" method="post" id="add-to-cart-or-refresh">
@@ -105,7 +102,11 @@
                   {block name='product_variants'}
                     {include file='catalog/_partials/product-variants.tpl'}
                   {/block}
-
+                  
+                  {block name='product_prices'}
+                    {include file='catalog/_partials/product-prices.tpl'}
+                  {/block}
+                  
                   {block name='product_pack'}
                     {if $packItems}
                       <section class="product-pack">
