@@ -51,13 +51,11 @@
   <section id="main">
     <meta content="{$product.url}">
 
-    <div class="row product-container js-product-container">
+    <div class="one-product row product-container js-product-container">
       <div class="col-md-6">
         {block name='page_content_container'}
           <section class="page-content" id="content">
             {block name='page_content'}
-              {include file='catalog/_partials/product-flags.tpl'}
-
               {block name='product_cover_thumbnails'}
                 {include file='catalog/_partials/product-cover-thumbnails.tpl'}
               {/block}
@@ -76,6 +74,12 @@
               <h1 class="h1">{block name='page_title'}{$product.name}{/block}</h1>
             {/block}
           {/block}
+
+          {include file='catalog/_partials/product-flags.tpl'}
+{*
+{hook h='displayProductActions'}
+*}
+          
           {block name='product_prices'}
             {include file='catalog/_partials/product-prices.tpl'}
           {/block}
@@ -91,7 +95,7 @@
               {/block}
             {/if}
 
-            <div class="product-actions js-product-actions">
+            <div id="product-page-cart" class="product-actions js-product-actions">
               {block name='product_buy'}
                 <form action="{$urls.pages.cart}" method="post" id="add-to-cart-or-refresh">
                   <input type="hidden" name="token" value="{$static_token}">
@@ -122,22 +126,22 @@
                   {block name='product_add_to_cart'}
                     {include file='catalog/_partials/product-add-to-cart.tpl'}
                   {/block}
-
-                  {block name='product_additional_info'}
+{*
+                 {block name='product_additional_info'}
                     {include file='catalog/_partials/product-additional-info.tpl'}
                   {/block}
-
+*}
                   {* Input to refresh product HTML removed, block kept for compatibility with themes *}
                   {block name='product_refresh'}{/block}
                 </form>
               {/block}
 
             </div>
-
+{*
             {block name='hook_display_reassurance'}
               {hook h='displayReassurance'}
             {/block}
-
+*}
             {block name='product_tabs'}
               <div class="tabs">
                 <ul class="nav nav-tabs" role="tablist">

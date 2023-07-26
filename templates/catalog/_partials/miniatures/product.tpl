@@ -196,7 +196,7 @@
             {/block}
 
             {block name='product_add_to_cart'}
-              {include file='catalog/_partials/product-add-to-cart.tpl'}
+              {include file='catalog/_partials/miniatures/product-add-to-cart.tpl'}
             {/block}
 
             {block name='product_additional_info'}

@@ -22,7 +22,7 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
-<div class="product-add-to-cart js-product-add-to-cart">
+<div id="add-to-cart-miniature" class="product-add-to-cart js-product-add-to-cart">
   {if !$configuration.is_catalog}
     <span class="control-label">{l s='Quantity' d='Shop.Theme.Catalog'}</span>
 
@@ -57,7 +57,7 @@
             {/if}
           >
 {*            <i class="material-icons shopping-cart">&#xE547;</i>      *}
-              {l s='Add to cart' d='Shop.Theme.Actions'}
+            {l s='To cart' d='Shop.Theme.Actions'}    
           </button>
         </div>
       </div>

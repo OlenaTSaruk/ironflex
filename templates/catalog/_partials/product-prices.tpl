@@ -89,7 +89,7 @@
     {/block}
 
     {hook h='displayProductPriceBlock' product=$product type="weight" hook_origin='product_sheet'}
-
+{*
     <div class="tax-shipping-delivery-label">
       {if !$configuration.taxes_enabled}
         {l s='No tax' d='Shop.Theme.Catalog'}
@@ -106,8 +106,9 @@
         {elseif $product.additional_delivery_times == 2}
           {if $product.quantity >= $product.quantity_wanted}
             <span class="delivery-information">{$product.delivery_in_stock}</span>
+            *}
           {* Out of stock message should not be displayed if customer can't order the product. *}
-          {elseif $product.add_to_cart_url}
+{**}          {elseif $product.add_to_cart_url}
             <span class="delivery-information">{$product.delivery_out_stock}</span>
           {/if}
         {/if}
