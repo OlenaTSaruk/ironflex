@@ -46,23 +46,24 @@
             aria-label="{l s='Quantity' d='Shop.Theme.Actions'}"
           >
         </div>
-      <div class="to-cart">
-        <div class="add">
-          <button
-            class="btn btn-primary add-to-cart"
-            data-button-action="add-to-cart"
-            type="submit"
-            {if !$product.add_to_cart_url}
-              disabled
-            {/if}
-          >
+        <div class="to-cart">
+          <div class="add">
+            <button
+              class="btn btn-primary add-to-cart"
+              data-button-action="add-to-cart"
+              type="submit"
+              {if !$product.add_to_cart_url}
+                disabled
+              {/if}
+            >
 {*            <i class="material-icons shopping-cart">&#xE547;</i>      *}
-            {l s='To cart' d='Shop.Theme.Actions'}    
-          </button>
+              {l s='To cart' d='Shop.Theme.Actions'}    
+            </button>
+          </div>
         </div>
-      </div>
-
-        {hook h='displayProductActions' product=$product}
+{*
+      {hook h='displayProductActions' product=$product}
+*}
       </div>
     {/block}
 

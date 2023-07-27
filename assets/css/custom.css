@@ -105,6 +105,11 @@ section#wrapper {
     justify-content: space-between;
 }
 
+#_desktop_cart {
+    display: flex;
+    align-items: center;
+}
+
 #_desktop_cart .header {
     display: flex;
     position: relative;
@@ -115,8 +120,8 @@ section#wrapper {
     right: 0;
     color: var(--footer-text);
     background: var(--link);
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     font-size: 0.75rem;
     border-radius: 50%;
     text-align: center;
@@ -429,6 +434,14 @@ a.main-button-slider {
     padding-left: 0;
 }
 
+.hot-sale {
+    padding-right: 7px;
+}
+
+.hot-sale .btn.btn-primary.add-to-cart {
+    padding: 0.45rem 0;
+}
+
 #ets_hotdeals .product-infomation-content .product-description,
 #ets_hotdeals .product-infomation-content {
     box-shadow: none;
@@ -451,7 +464,6 @@ a.main-button-slider {
 
 #ets_hotdeals .product-miniature .thumbnail-container {
     margin: 0;
-    background-repeat: var(--border-radius);
     border-radius: var(--border-radius);
 }
 
@@ -461,7 +473,7 @@ a.main-button-slider {
 }
 
 #ets_hotdeals .product-img-content {
-    padding-bottom: 16px;
+    padding-bottom: 27px;
     border-bottom: var(--border-style);
 }
 
@@ -508,15 +520,15 @@ a.main-button-slider {
     margin-left: -40px;
 }
 
-#index .js-product.product {
+/* #index .js-product.product {
     border: var(--border-style);
     width: 20%;
     border-radius: 6px;
-}
+} */
 
-#index .js-product.product .thumbnail-container.reviews-loaded {
+/* #index .js-product.product .thumbnail-container.reviews-loaded {
     border-radius: 6px;
-}
+} */
 
 #ets_hotdeals #add-to-cart-or-refresh {
     padding: 4px 0;
@@ -674,12 +686,12 @@ a.main-button-slider {
 }
 
 #index .sale .js-product.product {
-    width: 32%;
+    width: 33.333%;
 }
 
 #index .obnizka .obnizka_img {
-    margin-right: 10px;
-    height: 373px;
+    margin-right: 5px;
+    height: 383px;
 }
 
 @media (max-width: 1199px) {
@@ -707,14 +719,14 @@ a.main-button-slider {
     .ph_pcms_mobile_1>div[itemprop="itemListElement"],
     .ph_pcms_mobile_1>div.product,
     .ph_pcms_mobile_1>.product-miniature {
-        width: 49% !important;
+        width: 50% !important;
     }
 }
 
 @media (max-width: 460px) {}
 
 #index .obnizka .js-product.product {
-    width: 24%;
+    width: 25%;
 }
 
 #index .home-category {
@@ -722,7 +734,7 @@ a.main-button-slider {
 }
 
 #index .home-category.five .js-product.product {
-    width: 19%;
+    width: 20%;
 }
 
 #index .baner {
@@ -745,11 +757,11 @@ a.main-button-slider {
 @media (min-width: 1200px) {}
 
 /*--------------------miniature product-----------------*/
-h3.h3.product-title a {
+.h3.product-title a {
     color: var(--text);
 }
 
-h3.h3.product-title {
+.h3.product-title {
     height: 40px;
 }
 
@@ -826,7 +838,7 @@ element.style {
 }
 
 .product-miniature .product-price-and-shipping {
-    margin: 0 0 0 10px;
+    margin: 10px 0 0 10px;
     text-align: start;
 }
 
@@ -1235,3 +1247,73 @@ span.control-label {
 select.form-control:not([size]):not([multiple]) {
     margin-top: 20px;
 }
+
+.featured-products h2 {
+    padding-left: 8px;
+    margin-bottom: 30px;
+}
+
+.tabs .nav-tabs .nav-link.active,
+.tabs .nav-tabs .nav-link:hover {
+    border: 0;
+    border-bottom: #f6f6f6 2px solid;
+}
+
+.tabs .nav-tabs .nav-link {
+    color: var(--footer-background);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.tabs .nav-tabs .nav-link.active {
+    font-weight: 700;
+    color: var(--footer-background);
+}
+
+.product-accessories p.h5 {
+    font-size: 1.5rem;
+    margin-top: 16px;
+    padding-left: 8px;
+    margin-bottom: 30px;
+}
+
+/*---------------------product-miniatura-presta---------------------*/
+article.miniature.product-miniature.js-product-miniature {
+    border: var(--border-style);
+    border-radius: var(--border-radius);
+}
+
+.thumbnail-container.reviews-loaded {
+    border-radius: var(--border-radius);
+}
+
+.js-product.product {
+    width: 20%;
+}
+
+.js-product.product {
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-bottom: 14px;
+}
+
+.featured-products .js-product.product .h3.product-title {
+    height: 60px;
+}
+
+.product-miniature .product-description {
+    padding-bottom: 0.3rem;
+}
+
+.pagination>div:first-child {
+    display: none;
+}
+
+.pagination .current a {
+    color: var(--link);
+}
+
+/* .pagination .page-list {
+    width: 100px;
+    text-align: center;
+} */
