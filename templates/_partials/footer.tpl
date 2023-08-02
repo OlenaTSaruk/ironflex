@@ -53,7 +53,7 @@
 
     <div class="row">
     <div class="container">
-      <div class="copyright-border col-md-12">
+      <div class="copyright-border">
         <p class="text-sm-left">
           {block name='copyright_link'}
             <a class="copyright" href="https://computersoft.net.pl/" target="_blank" rel="noopener noreferrer nofollow">

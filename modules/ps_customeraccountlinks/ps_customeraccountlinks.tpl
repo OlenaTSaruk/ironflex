@@ -33,8 +33,8 @@
     <span class="h3">{l s='Your account' d='Shop.Theme.Customeraccount'}</span>
     <span class="float-xs-right">
       <span class="navbar-toggler collapse-icons">
-        <i class="material-icons add">&#xE313;</i>
-        <i class="material-icons remove">&#xE316;</i>
+        <i class="material-icons add">&#xe5cf;</i>
+        <i class="material-icons remove">&#xe5ce;</i>
       </span>
     </span>
   </div>
