@@ -694,6 +694,10 @@
         <source>Similar products</source>
         <target state="translated">Podobne produkty</target>
       </trans-unit>
+      <trans-unit id="5bdba1fc0fba1010d61ce253c2e57da8">
+        <source>Search our catalog</source>
+        <target state="translated">Szukaj po...</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

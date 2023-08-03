@@ -74,7 +74,7 @@
             {/if}
           {/if}
         </div>
-        <div class="header-top-right col-md-10 col-sm-12 position-static">
+        <div class="header-top-right offset-md-2 col-md-8 col-sm-12 position-static">
           {hook h='displayTop'}
           
         </div>
