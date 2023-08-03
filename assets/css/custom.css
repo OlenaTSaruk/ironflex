@@ -45,9 +45,9 @@ section#wrapper {
     background: #fff;
 }
 
-.btn.btn-primary {
+/* .btn.btn-primary {
     background: var(--buttons);
-}
+} */
 
 #header .header-nav {
     border-bottom: none;
@@ -765,10 +765,20 @@ a.main-button-slider {
 }
 
 .h3.product-title {
+    margin: 0 10px;
     height: 40px;
 }
 
+.product-miniature .product-title a {
+    font-weight: 500;
+}
+
 .product-miniature.js-product-miniature .product-flag.out_of_stock {
+    display: none;
+}
+
+.product-miniature .thumbnail-container:focus .product-description::after,
+.product-miniature .thumbnail-container:hover .product-description::after {
     display: none;
 }
 
@@ -794,7 +804,7 @@ a.main-button-slider {
     justify-content: center;
 }
 
-#add-to-cart-miniature .to-cart .add .btn.btn-primary.add-to-cart {
+button.btn.btn-primary.add-to-cart {
     background: var(--buttons-mini);
     color: var(--text);
     text-transform: none;
@@ -1208,10 +1218,20 @@ select.form-control.form-control-select option:active {
     border-color: var(--link);
 }
 
-#product-page-cart .to-cart .add .btn.btn-primary.add-to-cart {
-    padding: 0 44px;
+#product-page-cart .btn.btn-primary.add-to-cart {
     border-radius: var(--border-radius);
+    background: var(--buttons);
+    font-family: var(--decoration-text);
+    font-size: 1rem;
+    color: var(--footer-text);
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 242px;
 }
+
+/* #product-page-cart .btn.btn-primary.add-to-cart:hover {
+    animation: rotate 0.7s ease-in-out both;
+} */
 
 #product-page-cart .input-group.bootstrap-touchspin {
     display: flex;

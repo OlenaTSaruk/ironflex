@@ -1,18 +1,3 @@
-{* {extends file='parent:catalog/_partials/miniatures/product.tpl'}
-
-{block name='product_reviews'}
-    {hook h='displayProductListReviews' product=$product}
-    <form action="{$urls.pages.cart}" method="POST" class="add-to-cart-or-refresh">
-        <input type="hidden" name="token" value="{$static_token}">
-        <input type="hidden" name="id_product" value="{$product.id}" class="product_miniature_product_id">
-        <input type="hidden" name="qty" value="1">
-        
-        <button class="btn btn-primary add-to-cart add-to-cart_miniature" data-button-action="add-to-cart" type="submit" {if $product.quantity < 1 }disabled{/if}>
-            {l s='Add to cart' d='Shop.Theme.Actions'}
-        </button>
-    </form>
-{/block} *}
-
 {**
  * Copyright since 2007 PrestaShop SA and Contributors
  * PrestaShop is an International Registered Trademark & Property of PrestaShop SA
@@ -52,7 +37,7 @@
                                     {if !empty($product.cover.bySize.home_default.sources.webp)}
                                     <source srcset="{$product.cover.bySize.home_default.sources.webp}" type="image/webp">{/if}
                                     <img src="{$product.cover.bySize.home_default.url}"
-                                        alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
+                                        alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:500}{/if}"
                                         loading="lazy" data-full-size-image-url="{$product.cover.large.url}"
                                         width="{$product.cover.bySize.home_default.width}"
                                         height="{$product.cover.bySize.home_default.height}" />
@@ -75,6 +60,7 @@
                         {/if}
                     {/block}
 
+{*
                     <div class="highlighted-informations{if !$product.main_variants} no-variants{/if}">
                         {block name='quick_view'}
                             <a class="quick-view js-quick-view" href="#" data-link-action="quickview">
@@ -88,16 +74,17 @@
                             {/if}
                         {/block}
                     </div>
+*}
                 </div>
 
                 <div class="product-description">
                     {block name='product_name'}
                         {if $page.page_name == 'index'}
                             <h3 class="h3 product-title"><a href="{$product.url}"
-                                    content="{$product.url}">{$product.name|truncate:30:'...'}</a></h3>
+                                    content="{$product.url}">{$product.name|truncate:500}</a></h3>
                         {else}
                             <h2 class="h3 product-title"><a href="{$product.url}"
-                                    content="{$product.url}">{$product.name|truncate:30:'...'}</a></h2>
+                                    content="{$product.url}">{$product.name|truncate:500}</a></h2>
                         {/if}
                     {/block}
 
@@ -142,18 +129,18 @@
                 {include file='catalog/_partials/product-flags.tpl'}
                 
                 {block name='button-add-to-cart'}
-                <form action="{$urls.pages.cart}" method="POST" class="add-to-cart-or-refresh">
-                    <input type="hidden" name="token" value="{$static_token}">
-                    <input type="hidden" name="id_product" value="{$product.id}"
-                        class="product_miniature_product_id">
-                    <input type="hidden" name="qty" value="1">
+                    <form action="{$urls.pages.cart}" method="POST" class="add-to-cart-or-refresh">
+                        <input type="hidden" name="token" value="{$static_token}">
+                        <input type="hidden" name="id_product" value="{$product.id}"
+                            class="product_miniature_product_id">
+                        <input type="hidden" name="qty" value="1">
 
-                    <button class="btn btn-primary add-to-cart add-to-cart_miniature"
-                        data-button-action="add-to-cart" type="submit"
-                        {if $product.quantity < 1 }disabled{/if}>
-                        {l s='Add to cart' d='Shop.Theme.Actions'}
-                    </button>
-                </form>
+                        <button class="btn btn-primary add-to-cart add-to-cart_miniature"
+                            data-button-action="add-to-cart" type="submit"
+                            {if $product.quantity < 1 }disabled{/if}>
+                            {l s='To cart' d='Shop.Theme.Actions'}
+                        </button>
+                    </form>
                 {/block}
             </div>
         </article>
