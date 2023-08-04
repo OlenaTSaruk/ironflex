@@ -445,17 +445,25 @@ a.main-button-slider {
     margin-right: 0;
 }
 
+
+
 /*--- sale ---*/
 .content-anywhere-displayhomehotdeals h2 {
-    padding-left: 15px;
+    padding-left: 22px;
 }
 
-.content-anywhere-displayhomehotdeals .col-12.col-lg-7 {
-    padding-left: 0;
+.content-anywhere-displayhome h2 {
+    padding-left: 7px;
+}
+
+.tree-products {
+    padding: 0;
 }
 
 .hot-sale {
+    padding-left: 22px;
     padding-right: 7px;
+    width: 40.5%;
 }
 
 .hot-sale .btn.btn-primary.add-to-cart {
@@ -482,8 +490,12 @@ a.main-button-slider {
     border-radius: var(--border-radius);
 }
 
+#ets_hotdeals .time-count {
+    margin-top: 18px;
+}
+
 .product-img-conten_img-content {
-    padding-bottom: 6px;
+    padding-bottom: 12px;
     display: flex;
     border-radius: var(--border-radius);
     border-bottom: var(--border-style);
@@ -636,14 +648,6 @@ a.main-button-slider {
     }
 }
 
-@media (min-width: 992px) {
-    #index .content-anywhere-displayhome .col-lg-6 {
-        width: 100%;
-    }
-
-
-}
-
 @media (max-width: 992px) {
     .content-anywhere-displayhomehotdeals .col-12.col-lg-7 {
         padding-left: 15px;
@@ -687,8 +691,7 @@ a.main-button-slider {
 }
 
 #index .obnizka .obnizka_img {
-    margin-right: 5px;
-    height: 359px;
+    margin: 0 7px;
 }
 
 @media (max-width: 1199px) {
@@ -760,7 +763,7 @@ a.main-button-slider {
 }
 
 #index .baner {
-    margin-top: 24px;
+    margin: 24px 0;
     display: flex;
     justify-content: space-between;
 }
