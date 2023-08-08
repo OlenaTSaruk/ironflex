@@ -211,11 +211,15 @@
               {include file='catalog/_partials/product-details.tpl'}
             {/block}
 
+{*----------------------comments----------------------*}
             <div class="tad-pane fade" id="product-comments" role="tabpanel">
               {block name='product-comments'}
                 <div class="product-comments">
-                {hook h='displayProductAdditionalInfo' mod="productcomments" product=$product}
-                {include file='module:productcomments/views/templates/hook/product-comment-item-prototype.tpl'}                
+{*                {hook h='displayProductAdditionalInfo' mod="productcomments" product=$product}      *}
+{*                {include file='module:productcomments/views/templates/hook/product-comment-item-prototype.tpl'} *} 
+                  
+                {include file='catalog/respond.tpl'}    
+
                 </div>
               {/block}
             </div>
