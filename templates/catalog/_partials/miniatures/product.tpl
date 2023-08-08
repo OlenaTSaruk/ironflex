@@ -122,7 +122,7 @@
                     {/block}
 
                     {block name='product_reviews'}
-                        {hook h='displayProductListReviews' product=$product}
+                    {*    {hook h='displayProductListReviews' product=$product}*}
                     {/block}
                 </div>
 

@@ -77,20 +77,18 @@
 
           {include file='catalog/_partials/product-flags.tpl'}
 
-          {hook h='displayProductActions' product=$product}
+          {hook h='displayProductAdditionalInfo' product=$product}
 
           <div class="product-information">
             {block name='product_description_short'}
-              <div id="product-description-short-{$product.id}" class="product-description">{$product.description_short nofilter}</div>
-            {/block}
+{*              <div id="product-description-short-{$product.id}" class="product-description">{$product.description_short nofilter}</div>
+*}            {/block}
 
             {if $product.is_customizable && count($product.customizations.fields)}
               {block name='product_customization'}
                 {include file="catalog/_partials/product-customization.tpl" customizations=$product.customizations}
               {/block}
             {/if}
-
-            
 
             <div id="product-page-cart" class="product-actions js-product-actions">
               {block name='product_buy'}
@@ -142,7 +140,7 @@
             {block name='hook_display_reassurance'}
               {hook h='displayReassurance'}
             {/block}
-*}    
+*} 
         </div>
       </div>
     </div>
@@ -170,6 +168,16 @@
                 aria-controls="product-details"
                 {if !$product.description} aria-selected="true"{/if}>{l s='Product Details' d='Shop.Theme.Catalog'}</a>
             </li>
+
+            <li class="nav-item">
+              <a class="nav-link{if !$product.description} active js-product-nav-active{/if}"
+              data-toggle="tab"
+              href="#product-comments"
+              role="tab"
+              aria-controls="product-comments"
+              {if !$product.description} aria-selected="true"{/if}>{l s='Product opinion' d='Shop.Theme.Catalog'}</a>
+            </li>
+
             {if $product.attachments}
               <li class="nav-item">
                 <a
@@ -203,9 +211,18 @@
               {include file='catalog/_partials/product-details.tpl'}
             {/block}
 
+            <div class="tad-pane fade" id="product-comments" role="tabpanel">
+              {block name='product-comments'}
+                <div class="product-comments">
+                {hook h='displayProductAdditionalInfo' mod="productcomments" product=$product}
+                {include file='module:productcomments/views/templates/hook/product-comment-item-prototype.tpl'}                
+                </div>
+              {/block}
+            </div>
+
             {block name='product_attachments'}
               {if $product.attachments}
-              <div class="tab-pane fade in" id="attachments" role="tabpanel">
+                <div class="tab-pane fade in" id="attachments" role="tabpanel">
                   <section class="product-attachments">
                     <p class="h5 text-uppercase">{l s='Download' d='Shop.Theme.Actions'}</p>
                     {foreach from=$product.attachments item=attachment}

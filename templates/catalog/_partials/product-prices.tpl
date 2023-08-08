@@ -106,7 +106,7 @@
         {elseif $product.additional_delivery_times == 2}
           {if $product.quantity >= $product.quantity_wanted}
             <span class="delivery-information">{$product.delivery_in_stock}</span>
-            *}
+*}
           {* Out of stock message should not be displayed if customer can't order the product. *}
 {*          {elseif $product.add_to_cart_url}
             <span class="delivery-information">{$product.delivery_out_stock}</span>

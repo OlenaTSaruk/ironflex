@@ -692,11 +692,15 @@
       </trans-unit>
       <trans-unit id="f1cc4aaa3a819956844e508917e6f80b">
         <source>Similar products</source>
-        <target state="translated">Podobne produkty</target>
+        <target state="final">Podobne produkty</target>
       </trans-unit>
       <trans-unit id="5bdba1fc0fba1010d61ce253c2e57da8">
         <source>Search our catalog</source>
-        <target state="translated">Szukaj po...</target>
+        <target state="final">Szukaj po...</target>
+      </trans-unit>
+      <trans-unit id="f54fd396916f815dfd06a24b68af82d0">
+        <source>Product opinion</source>
+        <target state="final">Opinie</target>
       </trans-unit>
     </body>
   </file>

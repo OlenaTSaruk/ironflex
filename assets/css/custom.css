@@ -456,7 +456,7 @@ a.main-button-slider {
     padding-left: 7px;
 }
 
-.tree-products {
+.three-products {
     padding: 0;
 }
 
@@ -806,6 +806,17 @@ a.main-button-slider {
 
 .thumbnail-container.reviews-loaded .product-description {
     border-bottom: var(--border-style);
+    box-shadow: var(--box-shadow);
+}
+
+.thumbnail-container.reviews-loading:not(#ets_hotdeals .thumbnail-container.reviews-loading) {
+    border: var(--border-style);
+    border-radius: var(--border-radius);
+}
+
+.thumbnail-container.reviews-loading .product-description:not(#ets_hotdeals .thumbnail-container.reviews-loading .product-description) {
+    border-bottom: var(--border-style);
+    border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
 }
 
@@ -1232,6 +1243,18 @@ select.form-control.form-control-select option:active {
     background: var(--link);
 }
 
+.product-comments-additional-info {
+    margin: 20px 0;
+}
+
+.product-comments-additional-info .comments-note {
+    margin-bottom: 0;
+}
+
+.product-variants>.product-variants-item {
+    margin: 0;
+}
+
 .form-control:focus {
     outline: 2px solid var(--header-strip);
     border-color: var(--link);
@@ -1247,10 +1270,6 @@ select.form-control.form-control-select option:active {
     font-weight: 600;
     width: 242px;
 }
-
-/* #product-page-cart .btn.btn-primary.add-to-cart:hover {
-    animation: rotate 0.7s ease-in-out both;
-} */
 
 #product-page-cart .input-group.bootstrap-touchspin {
     display: flex;
@@ -1293,7 +1312,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .featured-products h2 {
     padding-left: 8px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .tabs .nav-tabs .nav-link.active,
@@ -1352,6 +1371,10 @@ article.miniature.product-miniature.js-product-miniature {
     height: 120px;
 }
 
+#product .product-miniature .product-description {
+    height: 140px;
+}
+
 .product-miniature .product-description h2.h3.product-title {
     height: 53px;
 }
@@ -1362,6 +1385,20 @@ article.miniature.product-miniature.js-product-miniature {
 
 .pagination .current a {
     color: var(--link);
+}
+
+.obnizka_slider {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.ph_pcms_product_list_wrapper.layout-slide .product-miniature {
+    padding: 0;
+    width: 100%;
+}
+
+.slick-track .slick-slide.slick-cloned {
+    width: 230px;
 }
 
 /*--------------------------category------------------------*/
