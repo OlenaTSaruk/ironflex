@@ -1409,4 +1409,18 @@ article.miniature.product-miniature.js-product-miniature {
 
 .dropdown-menu a[rel=nofollow]:hover {
     background: var(--link);
+    border-radius: 3px;
+}
+
+.ph_pcms_product_list_wrapper button.slick-arrow {
+    top: -25px;
+    border: var(--border-style);
+}
+
+.sale .ph_pcms_product_list_wrapper button.slick-prev.slick-arrow {
+    left: 560px;
+}
+
+.sale .ph_pcms_product_list_wrapper button.slick-next.slick-arrow {
+    right: 10px;
 }
