@@ -1401,8 +1401,12 @@ article.miniature.product-miniature.js-product-miniature {
     width: 100%;
 }
 
-.slick-track .slick-slide.slick-cloned {
-    width: 230px;
+.obnizka_slider {
+    width: 80%;
+}
+
+.obnizka_slider .slick-slide.slick-active[aria-hidden='false'] {
+    width: 222px !important;
 }
 
 /*--------------------------category------------------------*/
@@ -1422,7 +1426,7 @@ article.miniature.product-miniature.js-product-miniature {
 }
 
 .sale .ph_pcms_product_list_wrapper button.slick-prev.slick-arrow {
-    left: 560px;
+    left: 574px;
 }
 
 .sale .ph_pcms_product_list_wrapper button.slick-next.slick-arrow {
@@ -1430,7 +1434,7 @@ article.miniature.product-miniature.js-product-miniature {
 }
 
 .obnizka_slider .ph_pcms_product_list_wrapper button.slick-arrow.slick-prev {
-    left: 800px;
+    left: 798px;
 }
 
 .obnizka_slider .ph_pcms_product_list_wrapper button.slick-arrow.slick-next {
