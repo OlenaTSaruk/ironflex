@@ -446,6 +446,9 @@ a.main-button-slider {
 }
 
 
+.content-anywhere-displayhome {
+    margin-top: 10px;
+}
 
 /*--- sale ---*/
 .content-anywhere-displayhomehotdeals h2 {
@@ -770,13 +773,13 @@ a.main-button-slider {
 
 
 #index .baner_first {
-    padding-left: 0;
-    padding-right: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 #index .baner_second {
-    padding-left: 10px;
-    padding-right: 0;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 @media (min-width: 1200px) {}
@@ -937,6 +940,7 @@ element.style {
         margin-bottom: 5px;
     }
 }
+
 
 /*---------------------baner instagram--------------------------*/
 .carousel-inner>.carousel-item>a>img,
@@ -1423,4 +1427,20 @@ article.miniature.product-miniature.js-product-miniature {
 
 .sale .ph_pcms_product_list_wrapper button.slick-next.slick-arrow {
     right: 10px;
+}
+
+.obnizka_slider .ph_pcms_product_list_wrapper button.slick-arrow.slick-prev {
+    left: 800px;
+}
+
+.obnizka_slider .ph_pcms_product_list_wrapper button.slick-arrow.slick-next {
+    right: 8px;
+}
+
+.home-category.five .ph_pcms_product_list_wrapper button.slick-arrow.slick-prev {
+    left: 1020px;
+}
+
+.home-category.five .ph_pcms_product_list_wrapper button.slick-arrow.slick-next {
+    right: 8px;
 }
