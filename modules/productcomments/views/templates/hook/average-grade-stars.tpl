@@ -27,5 +27,6 @@
   <div class="comments-note">
     <span>{l s='Grade' d='Modules.Productcomments.Shop'}</span>
     <div class="grade-stars" data-grade="{$grade}"></div>
+    <div class="comments-nd">({$nb_comments})</div>
   </div>
 {/if}

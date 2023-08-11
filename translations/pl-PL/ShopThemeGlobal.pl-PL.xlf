@@ -36,11 +36,11 @@
       </trans-unit>
       <trans-unit id="975a85a4ffa56e23c70e2bbeaf405ac">
         <source>secs</source>
-        <target state="translated">secund</target>
+        <target state="translated">sekund</target>
       </trans-unit>
       <trans-unit id="74459ca3cf85a81df90da95ff6e7a207">
         <source>sec</source>
-        <target state="translated">secunda</target>
+        <target state="translated">sekunda</target>
       </trans-unit>
     </body>
   </file>
