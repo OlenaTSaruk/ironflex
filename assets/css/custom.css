@@ -1083,6 +1083,27 @@ ul.product-flags.js-product-flags {
     background: var(--buttons);
 }
 
+.block_newsletter form .row .col-xs-12:last-of-type p {
+    display: none;
+}
+
+.psgdpr_consent_message {
+    display: flex;
+    margin-top: 10px;
+}
+
+.psgdpr_consent_message span {
+    color: #fff !important;
+    background: var(--footer-background) !important;
+    font-family: var(--main-text) !important;
+    font-size: 0.75rem !important;
+    text-align: justify !important;
+}
+
+.custom-checkbox input[type=checkbox]+span {
+    margin-top: 5px;
+}
+
 @media (max-width: 1199px) {
     #block-newsletter-label {
         margin-top: 0;
