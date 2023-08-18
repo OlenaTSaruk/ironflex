@@ -65,7 +65,9 @@
             <input type="hidden" name="action" value="0">
             <div class="clearfix"></div>
           </div>
-          <div class="col-xs-12">
+          
+        </div>
+        <div class="col-xs-12">
               {if $conditions}
                 <p>{$conditions}</p>
               {/if}
@@ -79,7 +81,6 @@
                 {hook h='displayGDPRConsent' id_module=$id_module}
               {/if}
           </div>
-        </div>
       </form>
     </div>
   </div>

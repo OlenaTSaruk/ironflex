@@ -30,7 +30,7 @@
 
 {block name='content'}
   <section id="main">
-
+    {include file='_partials/breadcrumb.tpl'}
     {block name='product_list_header'}
       <h1 id="js-product-list-header" class="h2">{$listing.label}</h1>
     {/block}

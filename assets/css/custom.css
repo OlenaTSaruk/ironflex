@@ -184,6 +184,23 @@ section#wrapper {
     margin-bottom: 44px;
 }
 
+#category .breadcrumb {
+    margin-bottom: 5px;
+}
+
+.block-category.card.card-block {
+    padding-left: 0;
+    padding-top: 0;
+}
+
+#category #wrapper #notifications + .container>.breadcrumb, #new-products #wrapper #notifications+.container>.breadcrumb, #price-drop #wrapper #notifications+.container>.breadcrumb{
+    display: none;
+}
+
+#wrapper .breadcrumb li::after {
+    content: ">>";
+}
+
 /*-------------------------Slider-------------------------*/
 /*---------------start slider button
 .main-button-slider {
@@ -1069,6 +1086,7 @@ ul.product-flags.js-product-flags {
 #footer .block_newsletter p,
 .footer-container li a {
     color: var(--footer-text);
+    font-size: 0.7rem;
 }
 
 .footer-container .h3,
@@ -1083,25 +1101,35 @@ ul.product-flags.js-product-flags {
     background: var(--buttons);
 }
 
-.block_newsletter form .row .col-xs-12:last-of-type p {
-    display: none;
-}
-
 .psgdpr_consent_message {
-    display: flex;
+    /* display: flex; */
     margin-top: 10px;
 }
 
-.psgdpr_consent_message span {
+#authentication .custom-checkbox .psgdpr_consent_message span {
+    flex: auto;
+    color: white;
+}
+
+/*.psgdpr_consent_message span {
     color: #fff !important;
     background: var(--footer-background) !important;
     font-family: var(--main-text) !important;
     font-size: 0.75rem !important;
     text-align: justify !important;
+}*/
+
+.gdpr_consent span{
+    color: white;
+    font-size: 0.6rem;
 }
 
-.custom-checkbox input[type=checkbox]+span {
+/* .custom-checkbox input[type=checkbox]+span {
     margin-top: 5px;
+} */
+
+#footer .custom-checkbox input[type="checkbox"]:checked+span .checkbox-checked {
+    color: white;
 }
 
 @media (max-width: 1199px) {
