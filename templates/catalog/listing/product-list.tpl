@@ -31,9 +31,7 @@
 {block name='content'}
   <section id="main">
     {include file='_partials/breadcrumb.tpl'}
-    {block name='product_list_header'}
-      <h1 id="js-product-list-header" class="h2">{$listing.label}</h1>
-    {/block}
+<h1 class="h1">{$category.name}</h1>
 {*
     {block name='subcategory_list'}
       {if isset($subcategories) && $subcategories|@count > 0}
@@ -79,6 +77,10 @@
         <div id="js-product-list-bottom"></div>
       {/if}
     </section>
+
+    {block name='product_list_header'}
+      <h1 id="js-product-list-header" class="h2">{$listing.label}</h1>
+    {/block}
 
     {block name='product_list_footer'}{/block}
 
