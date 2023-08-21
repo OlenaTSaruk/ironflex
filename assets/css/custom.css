@@ -193,7 +193,9 @@ section#wrapper {
     padding-top: 0;
 }
 
-#category #wrapper #notifications + .container>.breadcrumb, #new-products #wrapper #notifications+.container>.breadcrumb, #price-drop #wrapper #notifications+.container>.breadcrumb{
+#category #wrapper #notifications+.container>.breadcrumb,
+#new-products #wrapper #notifications+.container>.breadcrumb,
+#price-drop #wrapper #notifications+.container>.breadcrumb {
     display: none;
 }
 
@@ -1119,7 +1121,7 @@ ul.product-flags.js-product-flags {
     text-align: justify !important;
 }*/
 
-.gdpr_consent span{
+.gdpr_consent span {
     color: white;
     font-size: 0.6rem;
 }
@@ -1472,8 +1474,12 @@ article.miniature.product-miniature.js-product-miniature {
     border: var(--border-style);
 }
 
-.js-product.product {
-    width: 20%;
+#products .js-product.product {
+    width: 25%;
+}
+
+.featured-products .js-product.product {
+    width: 20%
 }
 
 .js-product.product {
@@ -1581,4 +1587,124 @@ article.miniature.product-miniature.js-product-miniature {
     right: 25%;
     /* border-top: 2px solid #000;
     border-right: 2px solid #ccc; */
+}
+
+#blockcart-modal .product-name {
+    color: var(--footer-background);
+}
+
+.btn-primary {
+    background: var(--buttons);
+}
+
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.btn-primary:hover,
+.btn-primary:active {
+    background: #4A4A4A;
+}
+
+.btn-primary:focus {
+    background: #6b6a6a;
+}
+
+a,
+.done {
+    color: var(--link);
+}
+
+span.price,
+.cart-grid-body a.label:hover,
+a:focus,
+a:hover,
+body#checkout a:hover {
+    color: var(--sale-flag);
+}
+
+.cart-voucher .promo-code-button.display-promo .collapse-button {
+    color: var(--sale-price);
+}
+
+.custom-radio input[type=radio]:checked+span {
+    background: var(--link);
+}
+
+body#checkout section.checkout-step.-reachable.-current .step-number {
+    background-color: var(--link);
+}
+
+#checkout-personal-information-step .btn-primary,
+#checkout-personal-information-step .btn-primary:active:focus,
+#checkout-personal-information-step .btn-primary:active:hover,
+#checkout-personal-information-step .btn-primary:hover,
+#checkout-personal-information-step .btn-primary:active,
+#js-delivery .btn-primary,
+#checkout-delivery-step #js-delivery .btn-primary:active:focus,
+#checkout-delivery-step #js-delivery .btn-primary:active:hover,
+#checkout-delivery-step #js-delivery .btn-primary:hover,
+#checkout-delivery-step #js-delivery .btn-primary:active,
+#checkout-addresses-step .js-address-form .btn-primary,
+#checkout-addresses-step .js-address-form .btn-primary:active:focus,
+#checkout-addresses-step .js-address-form .btn-primary:active:hover,
+#checkout-addresses-step .js-address-form .btn-primary:hover,
+#checkout-addresses-step .js-address-form .btn-primary:active,
+#payment-confirmation .btn-primary,
+#payment-confirmation .btn-primary:active:focus,
+#payment-confirmation .btn-primary:active:hover,
+#payment-confirmation .btn-primary:hover,
+#payment-confirmation .btn-primary:active,
+.form-footer .btn-primary:disabled:hover {
+    background: #4A4A4A;
+}
+
+.form-group .input-group.focus {
+    outline: 1px solid var(--sale-flag);
+}
+
+body#checkout section.checkout-step .address-item.selected {
+    border: 3px solid var(--link);
+}
+
+.page-my-account #content .links a:hover i {
+    color: var(--link);
+}
+
+#product-modal .modal-content .modal-body .product-images img:hover {
+    border: var(--link) 3px solid;
+}
+
+.pagination a {
+    font-size: 1.25rem;
+}
+
+.psgdpr_consent_message span {
+    color: var(--text);
+    font-size: 0.75rem;
+}
+
+.group-span-filestyle .btn-default {
+    background: var(--buttons);
+}
+
+.footer-container li a:hover {
+    color: var(--link);
+}
+
+.text-primary {
+    color: var(--link) !important;
+}
+
+a.text-primary:focus,
+a.text-primary:hover {
+    color: var(--sale-price) !important;
+}
+
+#content p.wishlist-list-item-title:hover,
+a:not([href]):not([tabindex]):hover,
+a:not([href]):not([tabindex]):focus {
+    color: var(--link);
+}
+
+#content a.wishlist-list-item-link {
+    color: var(--link);
 }
