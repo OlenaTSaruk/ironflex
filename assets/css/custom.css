@@ -1765,3 +1765,13 @@ a:not([href]):not([tabindex]):focus {
 a.arrow-up i.material-icons {
     transform: translateY(-10%);
 }
+
+.scroll-to-top a:hover {
+    color: #fff;
+}
+
+/*--------------cookies--------------*/
+#c-bns button:first-child,
+#c-bns button+button {
+    border-radius: 9px;
+}
